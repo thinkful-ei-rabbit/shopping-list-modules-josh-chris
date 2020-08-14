@@ -112,9 +112,9 @@ const handleDeleteItemClicked = function() {
 /**
  * Toggles the store.hideCheckedItems property
  */
-// const toggleCheckedItemsFilter = function() {
-//     store.hideCheckedItems = !store.hideCheckedItems;
-// };
+const toggleCheckedItemsFilter = function() {
+    store.hideCheckedItems = !store.hideCheckedItems;
+};
 
 /**
  * Places an event listener on the checkbox
@@ -122,7 +122,7 @@ const handleDeleteItemClicked = function() {
  */
 const handleToggleFilterClick = function() {
     $('.js-filter-checked').click(() => {
-        store.findAndToggleChecked();
+        store.toggleCheckedFilter();
         render();
     });
 };

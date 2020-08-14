@@ -10,6 +10,7 @@ function create(name) {
         id: cuid(),
         name: name,
         checked: false,
+        // hideCheckedItems: false;
     };
     return item;
 };
